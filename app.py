@@ -29,7 +29,7 @@ FP = st.number_input('FP', min_value=np.int64(df['FP'].min()), max_value=np.int6
 
 data = {'IW': IW, 'IF': IF, 'VW': VW, 'FP': FP} #создание словаря с данными
 
-# prediction1 = model1.predict(pd.DataFrame(data, index=[0])) #предсказание
+prediction1 = model1.predict(pd.DataFrame(data, index=[0])) #предсказание
 # prediction2 = model2.predict(pd.DataFrame(data, index=[0]))
 
 #prediction button
