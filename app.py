@@ -29,11 +29,11 @@ FP = st.number_input('FP', min_value=np.int64(df['FP'].min()), max_value=np.int6
 
 data = {'IW': IW, 'IF': IF, 'VW': VW, 'FP': FP} #создание словаря с данными
 
-prediction1 = model1.predict(pd.DataFrame(data, index=[0])) #предсказание
-prediction2 = model2.predict(pd.DataFrame(data, index=[0]))
+# prediction1 = model1.predict(pd.DataFrame(data, index=[0])) #предсказание
+# prediction2 = model2.predict(pd.DataFrame(data, index=[0]))
 
 #prediction button
 # if st.button('Предсказать'):
-st.write('прогнозирование глубины(depth): ', round(prediction1[0],2))
-st.write('прогнозирование ширины(width): ', round(prediction2[0],2))
+# st.write('прогнозирование глубины(depth): ', round(prediction1[0],2))
+# st.write('прогнозирование ширины(width): ', round(prediction2[0],2))
 
