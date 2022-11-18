@@ -1,12 +1,15 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import dill
+import pickle
 import requests
 import json
 
-model1 = dill.load(open('model1.pkl', 'rb')) #чтение модели
-model2 = dill.load(open('model2.pkl', 'rb')) #чтение модели
+# model1 = dill.load(open('model1.pkl', 'rb')) #чтение модели
+# model2 = dill.load(open('model2.pkl', 'rb')) #чтение модели
+
+model1 = pickle.load(open('model1.pkl', 'rb')) #чтение модели
+model2 = pickle.load(open('model2.pkl', 'rb')) #чтение модели
 path = "data/ebw_data.csv"
 df = pd.read_csv(path, sep = ",", encoding = "utf-8") #чтение данных
 
